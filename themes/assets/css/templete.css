@@ -1,7 +1,10 @@
 @CHARSET "ISO-8859-1";
-/* Reset CSS
- * --------------------------------------- */
 
+html,body {
+    height: 100%; width: 100%; margin: 0;
+    color: #5a5a5a;
+    font-family: Meiryo;
+}
 .BG-cheap_diagonal_fabric {
     background-image: url(../images/BG-cheap_diagonal_fabric.png);
 }
