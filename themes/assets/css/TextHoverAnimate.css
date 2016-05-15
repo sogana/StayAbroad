@@ -1,0 +1,132 @@
+.yellow-divider {
+    width: 20%;
+    height: 1px;
+    margin-left: 0px;
+    background: #ffa100;
+    border-bottom: 1px solid #ffa100;
+}
+.text-gray {
+    color: rgba(125, 125, 125, 1);
+}
+.text-white h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+.text-md-left {
+    text-align: left;
+}
+.text-white {
+    color: rgba(255, 255, 255, 1);
+}
+
+.black-mask {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+.background-yellow{
+    background-color: yellow;
+}
+.marketing {
+    margin: 0;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*視差相關*/
+.parallax-background {
+    color: black;
+    background: url(../../assets/images/title-background.jpg) no-repeat center center fixed ;
+    height: 50%;
+    width: 100%;
+    background-size: cover;
+}
+
+/*回到頂端*/
+
+#gotop {
+	display: none;
+    position: fixed;
+    right: 40px;
+    bottom: 50%;    
+    width:50px;
+    height:50px;
+	padding:auto;
+    cursor: pointer;
+	border-radius: 50%;
+    background:#777;
+    -webkit-box-shadow: 4px 4px 54px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 54px 0px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 54px 0px rgba(0,0,0,0.75);
+    z-index: 100;
+  }
+
+.ImgCenter {
+    vertical-align : middle;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+#gotop img {
+  display: block;
+    margin: auto;
+}
+
+/*圖片秀*/
+#myCarousel {
+    text-align:center; 
+}
+
+.white {
+    color: white;
+}
+
+/*標題動畫*/
+#animateTitle {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    display: block;
+    
+}
+
+/*標題排版*/
+.CenterTitleText {
+    position: relative;
+    width: 80%;
+    z-index: 1;
+    color:white;
+    font-family: monospace;
+    font-size: 60px;
+    opacity: 0;
+    margin: 0 auto;
+    text-shadow:0px 0px 20px black;
+}
+
+.CenterSubText{
+    opacity: 0;
+    display: block;
+    position: relative;
+    z-index: 3;
+    color:white;
+    font-family: monospace;
+    font-size: 30px;
+    margin: 0 auto;
+    width: 80%;
+    text-shadow:0px 0px 20px black;
+}
+.CenterDivider {
+    position: relative;
+    top: 38%;
+    height: 1px;
+    width: 1px;
+    background-color:white;
+    z-index: 20;
+    margin: 0 auto;
+    
+}

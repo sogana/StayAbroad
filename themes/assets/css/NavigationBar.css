@@ -1,0 +1,152 @@
+/*導覽控制項 固定置頂*/
+.navbar-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    margin-top: 0;
+}
+/*  導覽控制項的背景色與透明度  底線     */
+.navbar-inverse {
+	background: rgba(0, 0, 0, 0.7);
+    border-color: #FFFFFF;
+    height: 100%;
+}
+
+/*  導覽控制項的背景色與透明度  底線     */
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #c83a3a;
+    
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #e4dcd2;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #c83a3a;
+}
+
+.navbar-inverse .navbar-header > a {
+	/*  導覽控制項的主標題文字 */
+    color: #FFFFFF;
+	font-family: Meiryo;
+	text-align: center;
+	width:250px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size:40px;
+}
+
+.large .navbar-inverse .navbar-header > a {
+	/*  導覽控制項的主標題文字 */
+    color: #FFFFFF;
+	font-family: Meiryo;
+	text-align: center;
+	width:250px;
+    font-weight: bold;
+    line-height: 40px;
+    font-size:40px;
+}
+.small .navbar-inverse .navbar-header > a {
+	/*  導覽控制項的主標題文字 */
+    color: #FFFFFF;
+	font-family: Meiryo;
+	text-align: center;
+	width:250px;
+    font-weight: bold;
+    line-height: 25px;
+    font-size:25px;
+}
+
+
+.navbar-inverse .navbar-nav > li > a {
+	/*  導覽控制項的文字顏色 */
+    color: #FFFFFF;
+	font-family: Meiryo;
+	font-size:15px;
+   
+}
+
+.large .navbar-inverse .navbar-nav > li > a {
+	/*  導覽控制項的文字顏色 */
+    color: #FFFFFF;
+	font-family: Meiryo;
+  
+    font-size:20px;
+    line-height: 40px;
+}
+
+.small .navbar-inverse .navbar-nav > li > a {
+	/*  導覽控制項的文字顏色 */
+    color: #FFFFFF;
+	font-family: Meiryo;
+   
+    font-size:16px;
+    line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    /* Remove the edge padding needed for mobile */
+    .navbar-wrapper .container {
+        height: 100%;
+        width: 100%;
+    }
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 100%;
+    }
+    
+}
+
+
+
+
+/*導航欄 變換動畫*/
+    .navbar-nav > li > a,
+    .navbar-wrapper,
+    .navbar-wrapper .navbar-inverse,
+    .navbar-header > a {
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+
+/*導航動畫*/
+.large {
+    height: 10%;
+    width:95%; 
+    margin: 0 auto;   
+    
+}
+.small {
+    height: 6%;
+    width:85%; 
+    margin: 0 auto;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

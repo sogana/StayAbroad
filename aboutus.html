@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        // Add scrollspy to <body>
+        $('body').scrollspy({
+            target: ".navbar",
+            offset: 50
+        });
+
+        // Add smooth scrolling on all links inside the navbar
+        $("#myNavbar a").on('click', function(event) {
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        });
+    });
+    </script>
+    <style>
+    body {
+        position: relative;
+    }
+    
+    #section1 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #1E88E5;
+    }
+    
+    #section2 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #673ab7;
+    }
+    
+    #section3 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #ff9800;
+    }
+    
+    #section4 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #F79646;
+    }
+    
+    #section5 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #4BACC6;
+    }
+    
+    #section6 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #9BBB59;
+    }
+    
+    #section7 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #C0504D;
+    }
+    
+    #section8 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #D9A790;
+    }
+    
+    #section9 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #dacc8f;
+    }
+    
+    #section41 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #cbd890;
+    }
+    
+    #section42 {
+        padding-top: 50px;
+        height: 80%;
+        color: #fff;
+        background-color: #9acccd;
+    }
+    
+    .first:first-letter {
+        width: 240px;
+        font-size: 250%;
+        line-height: 100%;
+    }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">品牌故事</a></li>
+                        <li><a href="#section2">從零開始</a></li>
+                        <li><a href="#section3">天然 質樸</a></li>
+                        <li><a href="#section4">分享</a></li>
+                        <li><a href="#section5">相依相偎</a></li>
+                        <li><a href="#section6">堅持！</a></li>
+                        <li><a href="#section7">Section 3</a></li>
+                        <li><a href="#section8">Section 3</a></li>
+                        <li><a href="#section9">Section 3</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#section41">Section 4-1</a></li>
+                                <li><a href="#section42">Section 4-2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="section1" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>關於我們！</h1>
+                <h2>品牌故事</h2>
+                <p class="first">緣起-雪地裡的思鄉味成立於2012年，創辦人Randy早年曾在加拿大就讀商業管理，剛到寒冷的北國，面對全新陌生的環境，一個人回到公寓常依靠泡麵來打發三餐，離開了熟悉的土地，最常想念的就是一家人團聚時的那份回憶，體貼的Randy媽開發了此款特殊的醬料讓他進行菜色搭配，由於應用性極為廣泛，口感又十分的美味，原先對烹飪一竅不通的他一下子栽進了烹飪的世界裡，九層塔在北美算是不容易取得的食材，經過封裝處理之後，是返回加拿大不可或缺的神祕精品。經過世界各國不同室友的好評，亞洲奇異的香料和真材實料的干貝，是所有故事的開端。
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section2" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <h1>關於我們！</h1>
+                    <h2>從零開始</h2>
+                </div>
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <h3 class="first">回台灣後，這段人生經歷沒有被刻意延續下來，Randy很快的投入了科技業中，成為了產業設備和化學材料業務，日子過得很充實， 曾經受到歡迎的醬料被塵封了起來，偶然間成為了逢年過節和客戶拉近距離的伴手禮，沒有華麗的標籤，只有這獨特的風味，就這樣慢慢在客戶間流傳開來。伴隨的是訂單與下一個人生機會，但是挫折和挑戰也就從這裡展開…
+</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="jumbotron" style="background-color: transparent;">
+                    <a class="btn btn-default btn-lg" role="button">学习更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>品牌理念！</h1>
+                <h2>天然，質樸，健康的保障</h2>
+                <p class="first">身為製造商，他並沒有具備食品化學的基礎，也不打算用色素讓辣椒維持鮮紅的色澤，拒絕使用化學修飾產品味道，所以只使用天然食材，不斷的翻閱書籍，拜訪學者和研究所進行討論。為了核心食材的選擇，跑遍了全台灣，用過數十種不同的材料進行比對。 經過重重摸索製造程序，克服困難，手工精品的背後，是困難的加工流程和複雜的食材組合。他很明白，使用新鮮食材或許可以節省成本，壓低售價，但是堅持只能用在對的地方。給一罐產品都投入了無數的心血，經歷過失敗再出發，只想呈現最真實的食材之美。
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section4" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>品牌理念！</h1>
+                <h2>分享　相依相偎的精神</h2>
+                <p class="first">相燚香煨的讀音即為＂相依相偎＂，指的是對身旁周遭親人，朋友，付出的愛與關懷，我們對品質的堅持，是希望當您在與身邊享受美好的一刻時，能夠享用真正的手工精品，所有的醬料幾乎可以應付所有需要煎煮炒炸的料理，就像當時遠赴北國的Randy，簡單的料理就能發揮出極致的烹飪美感。 我們同時也兼負食品安全的責任，使用純天然的食材，守護您身邊所有值得珍惜與重視的一切。
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section5" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>品牌理念！</h1>
+                <h2>相燚香煨，用美味，和幸福 相依相偎</h2>
+                <p class="first">記憶裡，廚房，就是母親所有的世界。 每次回家，這個心思細膩的大男孩，總是愛和母親一起窩在廚房裡， 分享心事，也分享母親的好手藝。熱愛下廚的母親， 總是私藏著許許多多的創意食譜、料理配方，用一道道愛的料理，拴住孩子們的心。
+                </p>
+                <p> 因為這份心意，所以有了帶著幸福味道的，相燚香煨。 「火」，是燃燒的光焰；添了一把火，是熾熱的「炎」； 「焱」是炫目的火光，「燚」(讀音依)，則是熱焰升騰， 彷彿是帶著濃郁香氣的熱焰，在細火慢工，熬熬燉煮24小時後， 蒸騰為一股股暖流，穿透心和心之間藩籬， 讓你和美味的幸福，相依相偎。
+                </p>
+                <p>在這裡，每一個人都可以和記憶裡最美好的記憶，幸福相遇， 品嘗相燚香煨，將最好的事物與周圍的人一起分享……
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section6" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>堅持！</h1>
+                <h2>對手工的堅持</h2>
+                <p class="first">相燚香煨全系列產品都堅持以手工生產，而這是一件相當吃力不討好的事情</p>
+                <p>凌晨四點去接收由屏東送來的吉園圃辣椒和九層塔， 由東港輸入的櫻花蝦， 宜蘭蘇澳輸入的丁香魚，蝦米 遙遠的北大西洋挪威鯖魚 美味卻又堅硬，難以處理的古法火腿。。。
+                </p>
+                <p>許多食材料理前要經過一系列的挑選，揀葉，清洗，過濾，脫水，乾燥，切碎程序，實在是一件很累人的事，只是為了加強品質的控管。 如果全系列的產品食材都經過精挑細選，卻因為講求效率而壓低了生產品質，最後仍然會交出一張功虧一簣的產品，
+                </p>
+                <p>而事實也證明為了求快而委託代工，我們曾經付出了相當慘痛的代價！</p>
+                <p>最後發現要成就好的東西，是沒有捷徑可以走的，產品的源頭就是因為手工生產，才能製作出美味，精神才能不斷流傳 所以我們不斷的嘗試，不斷在每次的生產力求突破，雖然手工很辛苦，但最後的成品才是我們想要的結果 不斷的在大家的反應中，努力將產品帶往更好的方向走！
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section7" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>題目！</h1>
+                <h2>副標題</h2>
+                <p class="first">內文
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section8" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>題目！</h1>
+                <h2>副標題</h2>
+                <p class="first">內文
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section9" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>題目！</h1>
+                <h2>副標題</h2>
+                <p class="first">內文
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section41" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>題目！</h1>
+                <h2>副標題</h2>
+                <p class="first">內文
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+    <div id="section42" class="container-fluid">
+        <div class="container">
+            <div class="jumbotron" style="background-color: transparent;">
+                <h1>題目！</h1>
+                <h2>副標題</h2>
+                <p class="first">內文
+                </p>
+                <a class="btn btn-default btn-lg" role="button">学习更多</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

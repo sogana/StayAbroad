@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="themes/assets/css/NavigationBar.css">
+        <link rel="stylesheet" href="themes/assets/css/OurProduct1.css">
+        <link rel="stylesheet" href="themes/dist/css/animate.css">
+        <link rel="stylesheet" href="themes/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="themes/dist/css/hover_effect_component.css">
+
+        <style>
+            body,
+            html {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            #section1 {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                top: 0px;
+                left: 0px;
+            }
+
+            #section2 {
+                position: relative;
+                height: 150%;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                top: 0px;
+                left: 0px;
+            }
+
+            #section3 {
+                color: #000000;
+                background-color: #eeeeee;
+                height: 100%;
+                width: 100%;
+            }
+
+            #section4 {
+                padding-top: 50px;
+                color: #000000;
+                background-color: #dddddd;
+                height: 100%;
+                width: 100%;
+            }
+
+            #section5 {
+                padding-top: 50px;
+                color: #000000;
+                background-color: #eeeeee;
+                height: 100%;
+                width: 100%;
+            }
+
+            #section6 {
+                padding-top: 50px;
+                color: #000000;
+                background-color: #dddddd;
+                height: 100%;
+                width: 100%;
+            }
+
+            .first:first-letter {
+                width: 240px;
+                font-size: 250%;
+                line-height: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar-wrapper large" id="navbar-base">
+            <div class="container">
+                <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                    <!--[navbar][navbar-inverse][navbar-static-top]為Bootstrap的三種樣式-->
+                    <div class="container">
+                        <div class="navbar-header active">
+                            <!--增大文字 顯眼用[navbar-header][navbar-brand]互配使用-->
+                            <a class="navbar-brand" href="index.html">哈瑪嚐鮮</a>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <!--[navbar-collapse][collapse]摺疊功能必須要用div包這兩特性內-->
+                            <ul class="nav navbar-nav ">
+                                <!--[nav]列表基本樣式[navbar-nav]改橫式-->
+                                <li><a href="index.html">回首頁</a></li>
+                                <!--[active]使選項保持被點亮的效果，有鏈結BS就會自動產生方格樣式-->
+                                <li><a href="aboutus.html">關於我們</a></li>
+                                <li><a href="mrgood.html">好好鮮生範例</a></li>
+                                <li><a href="contact.html">連絡我們</a></li>
+                                <li><a href="OurProduct.html">線上訂購</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">長鮮魚 <b class="caret"></b></a>
+                                    <!--[caret]使下拉式選單有倒三角樣式-->
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">DRINKS</a></li>
+                                        <li><a href="#">STARTERS</a></li>
+                                        <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                                        <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                                        <li><a href="#">LAMB MAIN COURSES</a></li>
+                                        <li><a href="#">RICE/BREDS</a></li>
+                                        <li><a href="#">ACCOMPANIMENTS</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">藏鮮貝 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">DRINKS</a></li>
+                                        <li><a href="#">STARTERS</a></li>
+                                        <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                                        <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                                        <li><a href="#">LAMB MAIN COURSES</a></li>
+                                        <li><a href="#">RICE/BREDS</a></li>
+                                        <li><a href="#">ACCOMPANIMENTS</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">嚐料理 <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">DRINKS</a></li>
+                                        <li><a href="#">STARTERS</a></li>
+                                        <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
+                                        <li class="divider"></li>
+                                        <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
+                                        <li><a href="#">CHICKEN MAIN COURSES</a></li>
+                                        <li><a href="#">LAMB MAIN COURSES</a></li>
+                                        <li><a href="#">RICE/BREDS</a></li>
+                                        <li><a href="#">ACCOMPANIMENTS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-fix-left" id="myNavbar">
+            <ul class="remove-dot">
+                <li>
+                    <a href="#section1">
+                        <div class="icon-bg fish-text-img active"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section2">
+                        <div class="icon-bg shrimp-text-img"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section3">
+                        <div class="icon-bg clam-text-img"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section4">
+                        <div class="icon-bg ball-text-img"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section5">
+                        <div class="icon-bg pot-text-img"></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#section6">
+                        <div class="icon-bg crab-text-img"></div>
+                    </a>
+                </li>
+                <li style="margin-top: 30px;">
+                    <a href="#section1">
+                        <div class="icon-bg back-text-img"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <section id="section1">
+                <div class="background-milkfish parallax-background" >
+                    <div class="lb-milkfish-skin">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 text-center">
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse1">虱目魚皮</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">One</li>
+                                                <li class="list-group-item">Two</li>
+                                                <li class="list-group-item">Three</li>
+                                            </ul>
+                                            <div class="panel-footer">Footer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 text-center">
+                                <div class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse2">虱目魚柳</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">One</li>
+                                                <li class="list-group-item">Two</li>
+                                                <li class="list-group-item">Three</li>
+                                            </ul>
+                                            <div class="panel-footer">Footer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 text-center">
+                                
+                                <div class="panel-group">
+                                    <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" href="#collapse3">虱目魚肚</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">One</li>
+                                                <li class="list-group-item">Two</li>
+                                                <li class="list-group-item">Three</li>
+                                            </ul>
+                                            <div class="panel-footer">Footer</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+            </section>
+            <section id="section2">
+                <div class="background-clam parallax-background" >
+
+                </div>
+
+            </section>
+            <section id="section3" class="container-fluid">
+                <div class="container">
+                    <div class="item  mackerel-OnTabla fishitem">
+                        <div class="mackerel-OnTabla-cutting transition-dot-five">
+                        </div>
+                        <div class="mackerel-OnTabla-drysalt transition-dot-five">
+                        </div>
+                        <div class="mackerel-OnTabla-Fillet transition-dot-five">
+                        </div>
+                    </div>
+                    <div class="jumbotron" style="background-color: transparent;">
+                        <h1>品牌理念！</h1>
+                        <h2>天然，質樸，健康的保障</h2>
+                        <p class="first">身為製造商，他並沒有具備食品化學的基礎，也不打算用色素讓辣椒維持鮮紅的色澤，拒絕使用化學修飾產品味道，所以只使用天然食材，不斷的翻閱書籍，拜訪學者和研究所進行討論。為了核心食材的選擇，跑遍了全台灣，用過數十種不同的材料進行比對。 經過重重摸索製造程序，克服困難，手工精品的背後，是困難的加工流程和複雜的食材組合。他很明白，使用新鮮食材或許可以節省成本，壓低售價，但是堅持只能用在對的地方。給一罐產品都投入了無數的心血，經歷過失敗再出發，只想呈現最真實的食材之美。
+                        </p>
+                        <a class="btn btn-default btn-lg" role="button">学习更多</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section4" class="container-fluid">
+                <div class="container">
+                    <div class="jumbotron" style="background-color: transparent;">
+                        <h1>品牌理念！</h1>
+                        <h2>分享　相依相偎的精神</h2>
+                        <p class="first">相燚香煨的讀音即為＂相依相偎＂，指的是對身旁周遭親人，朋友，付出的愛與關懷，我們對品質的堅持，是希望當您在與身邊享受美好的一刻時，能夠享用真正的手工精品，所有的醬料幾乎可以應付所有需要煎煮炒炸的料理，就像當時遠赴北國的Randy，簡單的料理就能發揮出極致的烹飪美感。 我們同時也兼負食品安全的責任，使用純天然的食材，守護您身邊所有值得珍惜與重視的一切。
+                        </p>
+                        <a class="btn btn-default btn-lg" role="button">学习更多</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section5" class="container-fluid">
+                <div class="container">
+                    <div class="jumbotron" style="background-color: transparent;">
+                        <h1>品牌理念！</h1>
+                        <h2>相燚香煨，用美味，和幸福 相依相偎</h2>
+                        <p class="first">記憶裡，廚房，就是母親所有的世界。 每次回家，這個心思細膩的大男孩，總是愛和母親一起窩在廚房裡， 分享心事，也分享母親的好手藝。熱愛下廚的母親， 總是私藏著許許多多的創意食譜、料理配方，用一道道愛的料理，拴住孩子們的心。
+                        </p>
+                        <p> 因為這份心意，所以有了帶著幸福味道的，相燚香煨。 「火」，是燃燒的光焰；添了一把火，是熾熱的「炎」； 「焱」是炫目的火光，「燚」(讀音依)，則是熱焰升騰， 彷彿是帶著濃郁香氣的熱焰，在細火慢工，熬熬燉煮24小時後， 蒸騰為一股股暖流，穿透心和心之間藩籬， 讓你和美味的幸福，相依相偎。
+                        </p>
+                        <p>在這裡，每一個人都可以和記憶裡最美好的記憶，幸福相遇， 品嘗相燚香煨，將最好的事物與周圍的人一起分享……
+                        </p>
+                        <a class="btn btn-default btn-lg" role="button">学习更多</a>
+                    </div>
+                </div>
+            </section>
+            <section id="section6" class="container-fluid">
+                <div class="container">
+                    <div class="jumbotron" style="background-color: transparent;">
+                        <h1>品牌理念！</h1>
+                        <h2>相燚香煨，用美味，和幸福 相依相偎</h2>
+                        <p class="first">記憶裡，廚房，就是母親所有的世界。 每次回家，這個心思細膩的大男孩，總是愛和母親一起窩在廚房裡， 分享心事，也分享母親的好手藝。熱愛下廚的母親， 總是私藏著許許多多的創意食譜、料理配方，用一道道愛的料理，拴住孩子們的心。
+                        </p>
+                        <p> 因為這份心意，所以有了帶著幸福味道的，相燚香煨。 「火」，是燃燒的光焰；添了一把火，是熾熱的「炎」； 「焱」是炫目的火光，「燚」(讀音依)，則是熱焰升騰， 彷彿是帶著濃郁香氣的熱焰，在細火慢工，熬熬燉煮24小時後， 蒸騰為一股股暖流，穿透心和心之間藩籬， 讓你和美味的幸福，相依相偎。
+                        </p>
+                        <p>在這裡，每一個人都可以和記憶裡最美好的記憶，幸福相遇， 品嘗相燚香煨，將最好的事物與周圍的人一起分享……
+                        </p>
+                        <a class="btn btn-default btn-lg" role="button">学习更多</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="themes/dist/js/jquery.js"></script>
+        <script src="themes/dist/js/bootstrap.min.js"></script>
+        <script src="themes/dist/js/owl.carousel.js"></script>
+        <script src="themes/dist/js/jQuery.scrollSpeed.js"></script>
+        <script src="themes/dist/js/jquery.parallax-1.1.3.js"></script>
+        <script src="themes/assets/js/BackToTop.js"></script>
+        <script src="themes/assets/js/NavigationBar.js"></script>
+        <script>
+            $(document).ready(function() {
+                //MAC OS 不使用平滑捲動
+                if (navigator.appVersion.indexOf("Win")!=-1) jQuery.scrollSpeed(75, 1000);
+
+                //自動辨識已到導航欄的那一個位置
+                $(window).scroll(function() {
+                    var windscroll = $(window).scrollTop();
+                    $('.wrapper section').each(function(i) {
+                        if ($(this).offset().top <= windscroll + 40) {
+                            $('.navbar-fix-left div.active').removeClass('active');
+                            $('.navbar-fix-left div').eq(i).addClass('active');
+                        }
+                    });
+                }).scroll();
+                //移動到指定的位置
+                $("#myNavbar a").on('click', function(event) {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+                    // Store hash
+                    var hash = this.hash;
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                });
+
+                $('.background-milkfish').parallax("50%", 0.3);
+
+
+
+            });
+
+        </script>
+    </body>
+
+</html>
