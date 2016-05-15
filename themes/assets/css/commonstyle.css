@@ -222,3 +222,12 @@
                  0px 14px 10px rgba(0,0,0,0.15),
                  0px 29px 30px rgba(0,0,0,0.1);
 }
+/*------------------------------按鈕形式------------------------------*/
+.btn-black {
+    color: white;
+    background-color: #444444;
+}
+.btn-black:hover {
+    color: white;
+    background-color: #444444;
+}
