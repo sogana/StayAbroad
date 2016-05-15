@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="BIG-5">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>fullPage整頁垂直導航跳頁動畫js</title>
+        <link href="themes/dist/css/jquery.fullPage.css" rel="stylesheet">
+        <link href="themes/assets/css/contact.css" rel="stylesheet">
+        <style>
+
+            /* Style for our header texts
+            * --------------------------------------- */
+            h1{
+                font-size: 5em;
+                font-family: arial,helvetica;
+                color: #fff;
+                margin:0;
+            }
+            .intro p{
+                color: #fff;
+            }
+            /* Centered texts in each section
+            * --------------------------------------- */
+            .section{
+                text-align:center;
+            }
+            /* Bottom menu
+            * --------------------------------------- */
+            #infoMenu li a {
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+
+
+        <ul id="menu">
+            <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><div class="icon-bg fish-text-img"></div></a></li>
+            <li data-menuanchor="secondPage"><a href="#secondPage"><div class="icon-bg shrimp-text-img"></div></a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage"><div class="icon-bg ball-text-img"></div></a></li>
+            <li data-menuanchor="4rdPage"><a href="#4rdPage"><div class="icon-bg crab-text-img"></div></a></li>
+            <li data-menuanchor="5rdPage"><a href="#5rdPage"><div class="icon-bg pot-text-img"></div></a></li>
+        </ul>
+
+        <div id="fullpage">
+
+            <div class="section Full-background-fish" id="section0">
+
+                <div class="tag-name"></div>
+
+            </div>
+            <div class="section Full-background-clam" id="section1">
+                <div class="slide" id="slide1">
+                    <div class="intro">
+                        <h1>URL get updated (#)</h1>
+                        <p>
+                            Easy to bookmark and share
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide" id="slide2">
+                    <h1>Horizontal sliders!</h1>
+                    <img src="https://raw.githubusercontent.com/alvarotrigo/fullPage.js/master/examples/imgs/iphone-blue.png" alt="iphone" id="iphone-two" />
+                </div>
+
+            </div>
+            <div class="section" id="section2">
+                <div class="intro">
+                    <h1>Just use </h1>
+                    <p>autoScrolling:false</p>
+                </div>
+            </div>
+
+            <div class="section" id="section3">
+                <div class="slide" id="slide1" data-anchor="slide1">
+                    <div class="intro">
+                        <h1>Clickable</h1>
+                        <p>
+                            You can even click on the navigation and jump directly to another section.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="slide" id="slide2" data-anchor="slide2">
+                    <h1>Slide 2</h1>
+                </div>
+
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <h1>Slide 2</h1>
+                </div>
+
+            </div>
+            <div class="section" id="section4">
+                <div class="intro">
+                    <h1>Enjoy it</h1>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="themes/dist/js/jquery.js"></script>
+        <script src="themes/dist/js/jquery-ui.min.js"></script>
+        <script src="themes/dist/js/jquery.fullPage.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    menu: '#menu',
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4rdPage', '5rdPage'],
+                    sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C','#8FB98B', '#DE564B'],
+                    autoScrolling: false,
+                    slidesNavigation: true,
+                    verticalCentered:false,
+                    fitToSection:false,
+
+                });
+            });
+
+
+        </script>
+
+    </body>
+
+</html>

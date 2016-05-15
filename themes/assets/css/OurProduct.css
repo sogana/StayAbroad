@@ -1,0 +1,357 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+
+/* Padding below the footer and lighter body text */
+
+html body {
+	height: 100%; width: 100%; margin: 0;
+    color: #5a5a5a;
+}
+
+/*調整為置頂 不再一直黏附*/
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    margin-top: 0;
+}
+
+
+.navbar-fixed-left li a {
+padding-left: 25px; /* Create padding on the left where the icon goes */
+text-decoration: none;
+text-transform: uppercase;
+color: #333;
+text-shadow: 1px 1px 1px #ccc;
+}
+
+
+.navbar-fixed-left {
+    position: fixed;
+    display: block;
+}
+
+
+
+.navbar-fix-left {
+    position:fixed;
+    top: 20%; 
+    left: 20px; 
+    height:100%; 
+    width:50px; 
+    z-index: 100;
+}
+
+.icon-bg {
+    width: 50px;;
+    height: 50px;
+    border-radius: 25px;
+    background-size: cover;
+    border-style: solid;
+    border-color: #555555;
+    border-width: 2px;
+    margin-top: 10px;
+    -webkit-box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.35);
+    box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.35);
+}
+.navbar-fix-left .active{
+    width: 70px;;
+    height: 70px;
+    border-radius: 35px;
+    background-size: cover;
+    border-style: solid;
+    border-color: #ff0000;
+    border-width: 2px;
+    margin-top: 10px;
+    -webkit-box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.35);
+    -moz-box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.35);
+    box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.35);
+}
+.fish-text-img {
+    background-image: url("../../assets/images/icon-fish.jpg");
+}
+.shrimp-text-img {
+    background-image: url("../../assets/images/icon-shrimp.jpg");
+}
+.ball-text-img {
+    background-image: url("../../assets/images/icon-ball.jpg");
+}
+.pot-text-img {
+    background-image: url("../../assets/images/icon-pot.jpg");
+}
+
+.crab-text-img {
+    background-image: url("../../assets/images/icon-crab.jpg");
+}
+.clam-text-img {
+    background-image: url("../../assets/images/icon-clam.jpg");
+}
+
+.remove-dot {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+div .icon-bg {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+
+}
+
+
+
+
+
+
+
+
+
+.wrapper #section2  background-wood02{
+    background-color: aqua;
+    background-image: url(../../assets/images/wood02.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display:block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+.owl-carousel .carou-salmon {
+    background-image: url(../../assets/images/carou-salmon.png) ;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.owl-carousel .carou-panga {
+    background-image: url(../../assets/images/carou-panga.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.owl-carousel .carou-shrimp {
+    background-image: url(../../assets/images/carou-CookedShrimps.png) ;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.owl-carousel .carou-wasabi {
+    background-image: url(../../assets/images/carou-wasabi.png) ;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.owl-carousel .carou-FishChips {
+    background-image: url(../../assets/images/carou-FishChips.png) ;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.owl-carousel .carou-chicken {
+    background-image: url(../../assets/images/carou-chicken.png) ;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    
+}
+
+.owl-carousel .carou-shrimp1 {
+    background-image: url(../../assets/images/carou-CookedShrimps1.png) ;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+#section1 .container .fishArray {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+}   
+#section2 .container .fishArray {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}   
+
+#section2 .mackerel-OnTabla {
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/Table-bass.png);
+    background-size: contain;
+    background-position: center;
+}
+
+
+
+.mackerel-OnTabla-cutting {
+    cursor: pointer;
+    position: relative;
+    height: 33%;
+    background-color: #00ff00;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";       /* IE 8 */
+    filter: alpha(opacity=0);  /* IE 5-7 */
+    -moz-opacity: 0;          /* Netscape */
+    -khtml-opacity: 0;        /* Safari 1.x */
+    opacity: 0;               /* Good browsers */
+}
+
+.mackerel-OnTabla-cutting:hover{
+    cursor: pointer;
+    position: relative;
+    height: 33%;
+    background-color: #00ffff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.5;        /* Safari 1.x */
+    opacity: 0.5;               /* Good browsers */
+}
+
+.mackerel-OnTabla-drysalt {
+    position: relative;
+    height: 33%;
+    background-color: #ff0000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.5;        /* Safari 1.x */
+    opacity: 0.5;               /* Good browsers */
+}
+
+.mackerel-OnTabla-Fillet {
+    position: relative;
+    height: 33%;
+    background-color: #0000ff;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+    filter: alpha(opacity=50);  /* IE 5-7 */
+    -moz-opacity: 0.5;          /* Netscape */
+    -khtml-opacity: 0.5;        /* Safari 1.x */
+    opacity: 0.5;               /* Good browsers */
+}
+
+.test-OnTabla {
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/test2-OnTable.png);
+    background-size: contain;
+    background-position: center;
+    height: 70%;
+}
+
+.Bass-OnTable{
+  
+    background-image: url(../../assets/images/Table-bass.png);
+    
+    
+}
+
+.background-milkfish {
+    
+    background: url(../../assets/images/bg-milkfish.jpg) no-repeat center center fixed ;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    margin-top: 0px;
+}
+
+.background-clam {
+    background: url(../../assets/images/bg-clam.jpg) no-repeat center center fixed ;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    margin-top: 0px;
+}
+
+.wrapper #section1 .background-wood01 {
+  
+    background: url(../../assets/images/wood01.jpg) no-repeat center center fixed ;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+#section1 .container {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+#section2 .container {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+
+
+.transition-one {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in; 
+    -o-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in; 
+    transition: all 1s ease-in; 
+}
+
+.transition-dot-five {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in; 
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in; 
+    transition: all 0.5s ease-in; 
+}
+
+.back-text-img {
+    background-image: url("../../assets/images/icon-back.jpg");
+}
+
+.MilkFish-OnTabla {
+    background-repeat: no-repeat;
+    background-image: url(../../assets/images/Table-Milkfish.png);
+    background-size: contain;
+    background-position: center;
+}
+
+#section2 .owl-carousel {
+    height: 100%;
+}
+
+.fishitem {
+    height: 100%;
+    
+    
+}
+
+.owl-carousel img {
+    width: 30%;
+}

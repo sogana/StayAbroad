@@ -1,0 +1,224 @@
+
+/*------------------------------單一修正類------------------------------*/
+
+.div-center {
+    margin: 0 auto;
+}
+.overflowhidden {
+    overflow: hidden;
+}
+.clear-margin {
+    margin: 0px;
+}
+.clear-padding {
+    padding: 0px;
+}
+.padding-bottom {
+    padding-bottom: 3%;
+}
+.padding-bottom6 {
+    padding-bottom: 6%;
+}
+.padding-bottom20 {
+    padding-bottom: 20px;
+}
+.padding-top3 {
+    padding-top: 3%;
+}
+.padding-top6 {
+    padding-top: 6%;
+}
+.padding-top10 {
+    padding-top: 10%;
+}
+.padding-top15 {
+    padding-top: 15%;
+}
+.margin-top30{
+    margin-top: 30%;
+}
+.padding-left{
+    padding-left: 10%;
+}
+.padding-right{
+    padding-right: 10%;
+}
+
+
+
+
+
+/*------------------------------圖片hover放大------------------------------*/
+.hover-zoom {
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    overflow: hidden;
+}
+.hover-zoom:hover {
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
+
+/*------------------------------圖片hover放大------------------------------*/
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    text-align: center;
+}
+
+.image-overlay-content {
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0; 
+}
+
+.overlay-fade-in p {
+    letter-spacing: 0.15em;
+    color: #f4f4f4;
+    font-size: 28px;
+    opacity: 0;
+    transition: all 0.2s linear; 
+}
+.overlay-fade-in img {
+    transition: all 0.2s linear; 
+}
+.overlay-fade-in .image-overlay-content {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in-out; 
+}
+.overlay-fade-in h2 {
+    color: #f2f2f2;
+    font-size: 1.8rem;
+
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+.overlay-fade-in:hover img {
+    transform: scale(1.2); }
+.overlay-fade-in:hover .image-overlay-content {
+    opacity: 1; }
+.overlay-fade-in:hover h2, .overlay-fade-in p, .overlay-fade-in .button {
+    opacity: 1; }
+.overlay-fade-in:hover p {
+    transition-delay: 0.1s; }
+.overlay-fade-in:hover .button {
+    transition-delay: 0.2s; }
+
+
+
+/*------------------------------字體顏色------------------------------*/
+.text-black {
+    color: #000000;
+}
+.text-gray {
+    color: rgba(100, 100, 100, 1);
+}
+.text-white {
+    color: rgba(255, 255, 255, 1);
+}
+.txt-orige {
+    color: #ff561b;
+}
+.txt-blue {
+    color: #7292cb;
+}
+.txt-purple {
+    color: #8064a2;
+}
+.txt-black {
+    color: #ff561b;
+}
+.txt-red {
+    color: #c0504d;
+}
+.txt-pink{
+    color: #ff6873;
+}
+.txt-yellow {
+    color: #faf06c;
+}
+.txt-green {
+    color: #9bbb59;
+}
+/*------------------------------字體大小------------------------------*/
+.text-large {
+    font-size: 3.2em;
+}
+/*------------------------------背景顏色------------------------------*/
+
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-graylite {
+    background-color: #eeeeee;
+}
+.bg-orige {
+    background-color: #ff561b;
+}
+.bg-blue {
+    background-color: #7292cb;
+}
+.bg-purple {
+    background-color: #8064a2;
+}
+.bg-black {
+    background-color: #000000;
+}
+.bg-green{
+    background-color: #9bbb59;
+}
+.bg-red{
+    background-color: #c0504d;
+}
+.bg-yellow{
+    background-color: #faf06c;
+}
+
+/*------------------------------邊框設定------------------------------*/
+.no-border {
+    border-width: 0px;
+}
+.text-hight {
+    line-height: 1.5;
+}
+.text-md-left {
+    text-align: left;
+}
+.full-width {
+    width: 100%;
+}
+.dsp-none {
+    display: none;
+}
+/*------------------------------陰影分層------------------------------*/
+.insetshadow {
+    -webkit-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+    -moz-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+    box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+    padding-top: 30px;
+}
+
+/*------------------------------標題文字陰影------------------------------*/
+.title-black-word-shadow {
+  line-height: 80px;
+  color: #111111;
+  text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+  letter-spacing: -2px;
+}
+
+.title-white-word-shadow {
+   text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 29px 30px rgba(0,0,0,0.1);
+}

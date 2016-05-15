@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html class="js no-touch">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- 什麼版本IE 就用什麼版本的標準模式： -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--device-width ，主要是為了讓整個頁面寬度與手機可視寬度相同,user-scalable=0:禁止使用者放大縮小,初始檢視10倍放大就填10.0,maximum-scale=15.0:限制最大放大比例, minimum-scale=0.1:限制最小縮小比例-->
+        <meta name="description" content="海鮮,產地直送,文蛤">
+        <!--網站的內容描述-->
+        <meta name="author" content="NolanLin">
+        <!--標註本網頁作者姓名等資料-->
+        <link rel="shortcut icon" href="theme/ico/favicon.ico">
+        <!--瀏覽器頁籤的小圖示-->
+        <title>哈瑪嚐鮮</title>
+        <!-- 引用bootstrap -->
+        <link href="themes/dist/css/bootstrap.css" rel="stylesheet">
+
+        <link href="themes/dist/css/hover_effect_component.css" rel="stylesheet">
+        <link href="themes/dist/css/animate.css" rel="stylesheet">
+        <link href="themes/assets/css/NavigationBar.css" rel="stylesheet">
+        <link href="themes/assets/css/index.css" rel="stylesheet">
+        <link href="themes/assets/css/shadow_effect.css" rel="stylesheet">
+        <link href="themes/assets/css/commonstyle.css" rel="stylesheet">
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="themes/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+        <!-- Custom styles for this template -->
+
+    </head>
+
+    <body>
+        <!-- Google地圖 隱藏================================================== -->
+        <!-- 
+<div class="top-map">
+<div id="map-canvas" style="width: 100%; height: 100%"></div>
+</div>
+-->
+        <!-- NAVBAR================================================== -->
+        <div id="gotop">
+            <img src="themes/assets/images/scrolltotop.png" class="ImgCenter">
+        </div>
+        <div style="width:100%;height:65px;"  class="insetshadow">
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <!--       <div class="container text-center" id="animateTitle">
+<div class="CenterTitleText">
+哈瑪嚐鮮
+</div>
+<div class="CenterDivider">
+</div>
+<div id="SubTitleText" class="CenterSubText">
+</div>
+</div>   
+-->
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="themes/assets/images/main_pic01.jpg"  href="http://www.w3schools.com" alt="Chania" width="100%">
+                </div>
+                <div class="item">
+                    <img src="themes/assets/images/main_pic02.jpg" alt="Chania" width="100%">
+                </div>
+                <div class="item">
+                    <img src="themes/assets/images/main_pic03.jpg" alt="Flower" width="100%">
+                </div>
+                <div class="item">
+                    <img src="themes/assets/images/main_pic04.jpg" alt="Flower" width="100%">
+                </div>
+                <div class="item">
+                    <img src="themes/assets/images/main_pic05.jpg" alt="Flower" width="100%">
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <div class="navbar-wrapper large" id="navbar-base">
+            <div class="container">
+
+
+                <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                    <!--[navbar][navbar-inverse][navbar-static-top]為Bootstrap的三種樣式-->
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+                            <div class="navbar-header active">
+                                <!--增大文字 顯眼用[navbar-header][navbar-brand]互配使用-->
+                                <a class="navbar-brand" href="index.html">哈瑪嚐鮮</a>
+                            </div>
+                            <!--[navbar-collapse][collapse]摺疊功能必須要用div包這兩特性內-->
+                            <ul class="nav navbar-nav ">
+                                <!--[nav]列表基本樣式[navbar-nav]改橫式-->
+                                <li><a href="index.html">回首頁</a></li>
+                                <!--[active]使選項保持被點亮的效果，有鏈結BS就會自動產生方格樣式-->
+
+
+                                <li><a href="search.html">好料上桌</a></li>
+                                <li><a href="contact.html">連絡我們</a></li>
+                                <li><a href="aboutus.html">關於我們</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+<div class="video-container">
+<div class="CenterTitleText">
+哈瑪嚐鮮
+</div>
+
+<div class="CenterDivider">
+
+</div>
+<div id="SubTitleText" class="CenterSubText">
+
+</div>
+<video autoplay loop="loop" muted poster="themes/assets/images/clam01.jpg" id="bgvid"> 
+<source src="video/HamaTaster-01.webm" type="video/webm">
+<source src="video/HamaTaster-01.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+-->
+        <!-- Marketing messaging and featurettes
+================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. <img width="100%" class="img-rounded" src="themes/assets/images/redbeam-04.jpg">  -->
+        <div style="width:100%;height:30px;"  class="insetshadow">
+        </div>
+
+        <div class="container padding-bottom">
+            <div class="text-center">
+                <div class="padding-bottom6 padding-top6">
+                    <h1 class="text-large title-black-word-shadow">
+                        有多久 沒有為了他/她下廚了
+                    </h1>
+                    <h3 class="text-gray padding-left padding-right">
+                        我們了解五分鐘出好菜,但是實際去做卻不是想像中的容易，過程包含採買、洗菜、煮、收拾、剩菜的處理…..唉，好複雜的工程。
+                    </h3>
+                </div>
+
+                <div class="row bgcolor-Cream">
+                    <div class="col-lg-6 clear-margin clear-padding">
+                        <div>
+                            <img width="100%" class="img-rounded" src="themes/assets/images/redbeam-04.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 padding-top10 padding-bottom6 padding-left padding-right">
+                        <h1 class="vertical-center">副食品</h1>
+                        <hr class="hr-color-red">
+                        <h3 class="text-gray text-hight">
+                            想讓寶貝也能吃到營養的海鮮,但是市售的量都太大,退凍後自行包裝就不再新鮮,更何況不是每個家庭都有一台真空包裝機.到底要怎樣同時滿足方便與新鮮.
+                        </h3>
+                        <button type="button" class="btn btn-danger redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">專屬寶貝的海鮮</button>
+                    </div>
+                </div>
+                <div class="row bgcolor-whitewood">
+                    <div class="col-lg-6 padding-top10 padding-bottom6 padding-left padding-right">
+                        <h1 class="vertical-center">微下廚</h1>
+                        <hr class="hr-color-red">
+                        <h3 class="text-gray text-hight">
+                            下廚並不只是會燒菜就好,瓶瓶罐罐的收納,青菜的挑選,生鮮的保存.若不是經常性地開伙<del>,雜亂會是唯一下場</del>,下廚反而變得更浪費時間與金錢.要如何快速下廚又能保障食安問題.
+                        </h3>
+                        <button type="button" class="btn btn-danger redirect-btn-style margin-top hvr-float-shadow">優雅的下廚</button>
+                    </div>
+                    <div class="col-lg-6 clear-margin clear-padding">
+                        <div>
+                            <img width="100%" class="img-rounded" src="themes/assets/images/diy-02.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 clear-margin clear-padding">
+                        <img width="100%" src="themes/assets/images/illustration-clamdaddy.jpg">
+
+                    </div>
+                    <div class="col-lg-8  clear-margin clear-padding">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="width:100%;height:30px;"  class="insetshadow  bgcolor-wood">
+        </div>
+
+        <div class="bgcolor-wood">
+            <div class="text-center text-white">
+                <div class="padding-bottom6 padding-top6">
+                    <h1 class="text-large title-white-word-shadow">
+                        有品味的生活 只需要多一點用心
+                    </h1>
+                    <h3 class="text-white">
+                        下廚更是如此 更何況不需考慮多餘的材料與瓶瓶罐罐們。
+                    </h3>
+                    <h3 class="text-white">
+                        以下您都做得到，不需額外材料。
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="container full-width clear-margin clear-padding bgcolor-wood">
+            <div class="row clear-margin clear-padding">
+                <div class="col-lg-4 clear-margin clear-padding">
+                    <div class="image-wrapper overlay-fade-in">
+                        <img  width="100%" src="themes/assets/images/dishdisplay/re1.jpg" />
+                        <div class="image-overlay-content">
+                            <h2>.overlay-fade-in</h2>
+                            <p class="price">$99.99</p>
+                            <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8  clear-margin clear-padding">
+                    <div class="row  clear-margin clear-padding">
+                        <div class="col-lg-3 clear-margin clear-padding">
+                            <div class="image-wrapper overlay-fade-in">
+                                <img  width="100%" src="themes/assets/images/dishdisplay/re2.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-fade-in</h2>
+                                    <p class="price">$99.99</p>
+                                    <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 clear-margin clear-padding">
+                            <div class="image-wrapper overlay-fade-in">
+                                <img  width="100%" src="themes/assets/images/dishdisplay/re3.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-fade-in</h2>
+                                    <p class="price">$99.99</p>
+                                    <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 clear-margin clear-padding">
+                            <div class="image-wrapper overlay-fade-in">
+                                <img  width="100%" src="themes/assets/images/dishdisplay/re4.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-fade-in</h2>
+                                    <p class="price">$99.99</p>
+                                    <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 clear-margin clear-padding">
+                            <div class="image-wrapper overlay-fade-in">
+                                <img  width="100%" src="themes/assets/images/dishdisplay/re5.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-fade-in</h2>
+                                    <p class="price">$99.99</p>
+                                    <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row  clear-margin clear-padding">
+                        <div class="col-lg-3 clear-margin clear-padding">
+                            <div class="image-wrapper overlay-fade-in">
+                                <img  width="100%" src="themes/assets/images/dishdisplay/re6.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-fade-in</h2>
+                                    <p class="price">$99.99</p>
+                                    <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 clear-margin clear-padding">
+                            <div class="image-wrapper overlay-fade-in">
+                                <img  width="100%" src="themes/assets/images/dishdisplay/re7.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-fade-in</h2>
+                                    <p class="price">$99.99</p>
+                                    <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 clear-margin clear-padding">
+                            <div class="image-wrapper overlay-fade-in">
+                                <img  width="100%" src="themes/assets/images/dishdisplay/re8.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-fade-in</h2>
+                                    <p class="price">$99.99</p>
+                                    <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 clear-margin clear-padding">
+                            <div class="image-wrapper overlay-fade-in">
+                                <img  width="100%" src="themes/assets/images/dishdisplay/re9.jpg" />
+                                <div class="image-overlay-content">
+                                    <h2>.overlay-fade-in</h2>
+                                    <p class="price">$99.99</p>
+                                    <button type="button" class="btn btn-default redirect-btn-style margin-top hvr-float-shadow" onclick="window.location.href='search.html?baby'">下廚去</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-background">
+            <div class="black-mask">
+                <br>
+                <div class="container text-center text-white">
+                    <br>
+                    <h1>50種以上水產</h1>
+                    <hr/>
+                    <h2>產地自營</h2>
+                    <h2>新鮮直送</h2>
+                    <h2>品質控管</h2>
+                    <h2>價格回饋</h2>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="cook-method container">
+            <div class="row">
+                <div class="col-lg-4 clear-margin clear-padding wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="progressive-button">
+                        <div class="boxcontainer stupid">
+                            <div class="stupidtext">
+                                <h1>清爽乾煎的酸甜</h1>
+                                <a href="">
+                                    <button type="button" class="btn btn-success hvr-float-shadow">立即前往</button>
+                                </a>
+                            </div>
+                            <div class="stupidbg">
+                            </div>
+                            <img width="100%" src="themes/assets/images/cook-method-1.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 clear-margin clear-padding wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="container-fluid text-center">
+                        <h1><strong>清湯</strong></h1>
+                        <br>
+                        <p class="lead">
+                            簡單魚肉與文蛤作為湯品的基底，再加上可以帶出食材鮮甜的洋蔥、蔬菜等等，飯後來一碗熱騰騰的湯，才像真正完成美好一餐啊
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 clear-margin clear-padding wow fadeInUp" data-wow-delay="1s">
+                    <div class="progressive-button">
+                        <div class="boxcontainer stupid">
+                            <div class="stupidtext">
+                                <h1>紅燒料理最下飯</h1>
+                                <a href="">
+                                    <button type="button" class="btn btn-success hvr-float-shadow">立即前往</button>
+                                </a>
+                            </div>
+                            <div class="stupidbg">
+                            </div>
+                            <img width="100%" src="themes/assets/images/cook-method-2.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 clear-margin clear-padding wow fadeInUp" data-wow-delay="1s">
+                    <div class="container-fluid text-center">
+                        <h1><strong>乾煎</strong></h1>
+                        <br>
+                        <p class="lead">
+                            考驗耐心的時候到了，你能忍住多久不要去翻魚，只要你撐過了，那金黃的乾煎色澤配上簡單義式香料與檸檬就足夠震懾全場。
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 clear-margin clear-padding wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="progressive-button">
+                        <div class="boxcontainer stupid">
+                            <div class="stupidtext">
+                                <h1>尋找湯頭的食材?</h1>
+                                <a href="">
+                                    <button type="button" class="btn btn-success hvr-float-shadow">立即前往</button>
+                                </a>
+                            </div>
+                            <div class="stupidbg">
+                            </div>
+                            <img width="100%" src="themes/assets/images/cook-method-3.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 clear-margin clear-padding wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="container-fluid text-center">
+                        <h1><h1><strong>紅燒</strong></h1></h1>
+                        <br>
+                        <p class="lead">
+                            最主要也最重要的是醬油的選購，其餘配料有蒜頭，薑，油，蔥。怎麼有辦法拒絕那淋在白飯上的醬汁味道呢。
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <div class="row featurette container full-width">
+            <div class=col-md-7>
+                <h2 class=featurette-heading>First featurette heading. <span class=text-muted>It'll blow your mind.</span></h2>
+                <p class=lead>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</div>
+            <div class=col-md-5><img class="featurette-image img-responsive" data-src=holder.js/500x500/auto alt="Generic placeholder image"></div>
+        </div>
+        
+
+        <div class="container marketing insetshadow">
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4 wow bounceIn" data-wow-delay="0.1s">
+                    <ul class="flip-effect bg-green ">
+                        <li>
+                            <figure>
+                                <img src="themes/assets/images/cook-style-fry.png" alt=""/>
+                                <figcaption>
+                                    <h2>This is a cool title!</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4 wow bounceIn" data-wow-delay="0.6s">
+                    <img class="img-rounded use_animate_css" src="themes/assets/images/clam03.jpg" alt="Generic placeholder image">
+                    <h2>Burger</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
+                    <p><a class="btn btn-default" href="#" role="button">&pound;5 Add to cart &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4 wow bounceIn" data-wow-delay="1.1s">
+                    <img class="img-rounded use_animate_css" src="themes/assets/images/clam04.jpg" alt="Lam Tikka">
+                    <h2>Gurkha Chicken</h2>
+                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
+                    <p><a class="btn btn-default" href="#" role="button">&pound;4 Add to cart &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4 wow bounceIn" data-wow-delay="1.1s">
+                    <img class="img-rounded" src="themes/assets/images/clam05.jpg" alt="Generic placeholder image">
+                    <h2>Nepalese MOMO</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
+                    <p><a class="btn btn-default" href="#" role="button">&pound; 2.2 Add to cart &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4 wow bounceIn" data-wow-delay="0.6s">
+                    <img class="img-rounded" src="themes/assets/images/clam06.jpg" alt="Generic placeholder image">
+                    <h2>Burger</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
+                    <p><a class="btn btn-default" href="#" role="button">&pound;5 Add to cart &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4 wow bounceIn" data-wow-delay="0.1s">
+                    <img class="img-rounded" src="themes/assets/images/clam02.jpg" alt="Generic placeholder image">
+                    <h2>Burger</h2>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
+                    <p><a class="btn btn-default" href="#" role="button">&pound;5 Add to cart &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+
+
+        <div class="sourceplace container">
+            <div class="row withFullPercentage">
+                <div class="col-lg-4 wow rotateInDownLeft" data-wow-delay="0.3s">
+                    <div class="whiteboard bg-clam transition-dot-five" onclick="window.location.href='search.html?bivalvia'">
+                        <div class="txt-frame">
+                            <div class="colorboard bg-orige">
+                                <div class="title-up text-black">
+                                    文蛤
+                                </div>
+                                <div class="sub-title-up text-black">
+                                    產量主分佈台灣西南沿海。多棲息於淺海的沙泥底，喜歡生活在河水濕地與潮間帶等地區。
+                                </div>
+
+                            </div>
+                            <div class="colorboard bg-black">
+                                <div class="title-down txt-orige">
+                                    文蛤(三種大小)
+                                </div>
+                                <div class="sub-title-down txt-orige">
+                                    不管是清炒，燒烤，煮湯，鮮甜味總是難以忘懷
+                                </div>
+                                <div class="title-down txt-orige">
+                                    醃漬文蛤
+                                </div>
+                                <div class="sub-title-down txt-orige">
+                                    找尋不一樣的下酒菜嗎？絕對要來試試這味。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 wow rotateInDownLeft" data-wow-delay="0.8s">
+                    <div class="whiteboard transition-dot-five bg-milkfish"  onclick="window.location.href='search.html?milkfish'">
+                        <div class="txt-frame">
+                            <div class="colorboard bg-blue">
+                                <div class="title-up text-black">
+                                    虱目魚
+                                </div>
+                                <div class="sub-title-up text-black">
+                                    虱目魚是東南亞一帶的重要魚獲物，溫水性魚類，分布在亞熱帶。
+                                </div>
+                            </div>
+                            <div class="colorboard bg-black">
+                                <div class="title-down txt-blue">
+                                    虱目魚柳
+                                </div>
+                                <div class="sub-title-down txt-blue">
+                                    又稱魚菲力，主活動力部位，口感極度Q彈！
+                                </div>
+                                <div class="title-down txt-blue">
+                                    無刺虱目魚肚
+                                </div>
+                                <div class="sub-title-down txt-blue">
+                                    去除惱人魚刺，無顧慮的爽快享用
+                                </div>
+                                <div class="title-down txt-blue">
+                                    虱目魚丸
+                                </div>
+                                <div class="sub-title-down txt-blue">
+                                    嚴選新鮮虱目魚製成，隨即急速冷凍鎖住鮮甜
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow rotateInDownLeft"  data-wow-delay="1.3s">
+                    <div class="whiteboard transition-dot-five bg-mulletEgg" onclick="window.location.href='search.html?tilapia'">
+                        <div class="txt-frame">
+                            <div class="colorboard bg-purple">
+                                <div class="title-up text-black">
+                                    台灣鯛
+                                </div>
+                                <div class="sub-title-up text-black">
+                                    俗稱吳郭魚，由吳振輝及郭啟彰兩位先生於從新加坡引進，因具很強的適應能力，因而能適應淡水與海水。
+                                </div>
+                                <div>
+                                </div>
+                            </div>
+                            <div class="colorboard bg-black">
+                                <div class="title-down txt-purple">
+                                    鯛魚片
+                                </div>
+                                <div class="sub-title-down txt-purple">
+                                    台灣鯛切片，去刺並且容易烹飪
+                                </div>
+                                <div class="title-down txt-purple">
+                                    魚下巴
+                                </div>
+                                <div class="sub-title-down txt-purple">
+                                    日式料理的第一選擇，隨便一烤都是美味
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+
+
+        <div class="sourceplace container insetshadow">
+            <div class="row withFullPercentage">
+
+                <div class="col-lg-4 wow rotateInDownLeft" data-wow-delay="1.3s">
+                    <div class="whiteboard transition-dot-five bg-cod" onclick="window.location.href='search.html?salmon'">
+                        <div class="txt-frame">
+                            <div class="colorboard bg-yellow">
+                                <div class="title-up text-black">
+                                    鮭魚
+                                </div>
+                                <div class="sub-title-up text-black">
+                                    還記得蔣公小時候看到魚逆流而上的故事嗎？但我只記得他在餐盤上美味的樣子。
+                                </div>
+
+                            </div>
+                            <div class="colorboard bg-black">
+                                <div class="title-down txt-yellow">
+                                    鮭魚頭
+                                </div>
+                                <div class="sub-title-down txt-yellow">
+                                    最對味的味增湯來自於這最重要的部位。
+                                </div>
+                                <div class="title-down txt-yellow">
+                                    厚切
+                                </div>
+                                <div class="sub-title-down txt-yellow">
+                                    乾煎後淋上檸檬的酸甜滋味
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow rotateInDownLeft"  data-wow-delay="0.8s">
+                    <div class="whiteboard transition-dot-five bg-salmon" onclick="window.location.href='search.html?cod'">
+                        <div class="txt-frame">
+                            <div class="colorboard bg-green">
+                                <div class="title-up text-black">
+                                    鱈魚
+                                </div>
+                                <div class="sub-title-up text-black">
+                                    因商業行銷，許多無關的魚類都被冠上這個名稱，想了解嗎？可搜尋'鱈魚的真相'。
+                                </div>
+                            </div>
+                            <div class="colorboard bg-black">
+                                <div class="title-down txt-green">
+                                    厚切
+                                </div>
+                                <div class="sub-title-down txt-green">
+                                    往往愈單純簡單的清蒸料理，愈能吃到食材本身的鮮甜和營養。
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow rotateInDownLeft" data-wow-delay="0.3s">
+                    <div class="whiteboard bg-shrimp transition-dot-five" onclick="window.location.href='search.html?shrimp'">
+                        <div class="txt-frame">
+                            <div class="colorboard bg-red">
+                                <div class="title-up text-black">
+                                    蝦子
+                                </div>
+                            </div>
+                            <div class="colorboard bg-black">
+                                <div class="title-down txt-red">
+                                    斑節蝦
+                                </div>
+                                <div class="sub-title-down txt-red">
+                                    冬季限定的Q彈肉質。
+                                </div>
+                                <div class="title-down txt-red">
+                                    草蝦
+                                </div>
+                                <div class="sub-title-down txt-red">
+                                    為保持其最自然的生態系與虱目魚混養於魚塭。。
+                                </div>
+                                <div class="title-down txt-red">
+                                    白蝦
+                                </div>
+                                <div class="sub-title-down txt-red">
+                                    我們相信非密度養殖才能有最健康的蝦子
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>     
+        <div class="well container bg-questions clear-margin insetshadow">
+            <div class="row">
+                <div class="col-lg-4 dropdown-list wow bounceInLeft"  data-wow-delay="1.3s">
+                    <div class="well bg-white transition-dot-five hvr-shadow-radial">
+                        <h1 class="txt-blue hvr-underline-from-left">貨品運送</h1>
+                        <ul>
+                            <li class="txt-blue hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>紙箱裝載 愛護地球</h2>
+                                <p>還沒想到內容還沒想到內容還沒想到內容還沒想到內容</p>
+                            </li>
+                            <li class="txt-blue hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>中午12點前下單，隔日取貨</h2>
+                                <p>還沒想到內容還沒想到內容還沒想到內容還沒想到內容</p>
+                            </li>
+                            <li class="txt-blue hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>Points of Interest</h2>
+                                <p>還沒想到內容還沒想到內容還沒想到內容還沒想到內容</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow dropdown-list wow bounceInLeft" data-wow-delay="0.8s">
+                    <div class="well bg-white transition-dot-five hvr-shadow-radial">
+                        <h1 class="txt-pink">食材保存</h1>
+                        <ul>
+                            <li class="txt-pink hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>冷凍保存</h2>
+                                <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+                            </li>
+                            <li class="txt-pink hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>冷藏保存</h2>
+                                <p>Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state of the checkbox input element. One use, as demonstrated here, is an entirely CSS and HTML accordion element. Media queries are used to make the element responsive to different screen sizes.</p>
+                            </li>
+                            <li class="txt-pink hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>常溫保存</h2>
+                                <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript (if needed) by changing the "checked" property of the input element.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 dropdown-list wow bounceInLeft" data-wow-delay="0.3s">
+                    <div class="well bg-white transition-dot-five hvr-shadow-radial">
+                        <h1 class="txt-green">付費方式</h1>
+                        <ul>
+                            <li class="txt-green hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>ATM轉帳</h2>
+                                <p>This page was written in HTML and CSS. The CSS was compiled from SASS. I used Normalize as my CSS reset and -prefix-free to save myself some headaches. I haven't quite gotten the hang of Slim for compiling into HTML, but someday I'll use it since its syntax compliments that of SASS. Regardless, this could all be done in plain HTML and CSS.</p>
+                            </li>
+                            <li class="txt-green hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>線上刷卡</h2>
+                                <p>Using the sibling and checked selectors, we can determine the styling of sibling elements based on the checked state of the checkbox input element. One use, as demonstrated here, is an entirely CSS and HTML accordion element. Media queries are used to make the element responsive to different screen sizes.</p>
+                            </li>
+                            <li class="txt-green hvr-underline-from-center">
+                                <input type="checkbox" checked>
+                                <i></i>
+                                <h2>支付寶付費</h2>
+                                <p>By making the open state default for when :checked isn't detected, we can make this system accessable for browsers that don't recognize :checked. The fallback is simply an open accordion. The accordion can be manipulated with Javascript (if needed) by changing the "checked" property of the input element.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="text-center insetshadow padding-top3 padding-bottom">
+            <h1><span class="txt-red txt-bolder">首次</span>註冊享全站<span class="txt-blue txt-bolder">免運</span></h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 wow bounceInLeft">
+                        <div class="well bg-white transition-dot-five shadow_bottom">
+                            <div class="glyphicon glyphicon-envelope tag-black" aria-hidden="true"></div>
+                            <h2>源自產地</h2>
+                            <hr class="yellow-divider">
+                            <p>雲林縣台西鄉因圍海築堤取地，開發約1,200多公頃【海埔新生地】，因文蛤養殖佔95%以上，為確保其生態的循環，故一併養殖相關漁產，如虱目魚，鰻魚等各類魚種與各類蝦種，因而能提供大量的新鮮海產。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 wow bounceInLeft">
+                        <div class= "well bg-white transition-dot-five shadow_bottom">
+                            <div class="glyphicon glyphicon-remove tag-black" aria-hidden="true"></div>
+                            <h2>憎恨註冊？</h2>
+                            <hr class="yellow-divider">
+                            <p>每日清晨四點就要開始進行收成，打撈起的海鮮在經過嚴格篩選後，立即進入低溫確保處理過程保鮮，
+                                即使20年的養殖經驗我們依然親自查驗每批海鮮，再真空包裝，確保鮮度與品質，最終才能安心交送給顧客。
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <section class="text-center text-md-left bg-graylite padding-bottom insetshadow">
+            <div class="padding-bottom padding-top text-center no-border bg-graylite">
+                <!--<h1>主要<span style="color:#4f818d">特</span><span style="color:#c0504d">色</span></h1>*/-->
+                <h1 style="font-weight: bold;">Why Choose Us</h1>
+            </div>
+
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 wow bounceIn" data-wow-delay="0.1s">
+                        <div class="well bg-white transition-dot-five shadow_bottom">
+                            <div class="glyphicon glyphicon-star tag-blue" aria-hidden="true"></div>
+                            <h2>源自產地</h2>
+                            <hr class="yellow-divider">
+                            <p>雲林縣台西鄉因圍海築堤取地，開發約1,200多公頃【海埔新生地】，因文蛤養殖佔95%以上，為確保其生態的循環，故一併養殖相關漁產，如虱目魚，鰻魚等各類魚種與各類蝦種，因而能提供大量的新鮮海產。</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 wow bounceIn" data-wow-delay="0.5s" >
+                        <div class= "well bg-white transition-dot-five shadow_bottom">
+                            <div class="glyphicon glyphicon-eye-open tag-blue" aria-hidden="true"></div>
+                            <h2>品質把關</h2>
+                            <hr class="yellow-divider">
+                            <p>每日清晨四點就要開始進行收成，打撈起的海鮮在經過嚴格篩選後，立即進入低溫確保處理過程保鮮，
+                                即使20年的養殖經驗我們依然親自查驗每批海鮮，再真空包裝，確保鮮度與品質，最終才能安心交送給顧客。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 wow bounceIn" data-wow-delay="1s">
+                        <div class="well bg-white transition-dot-five shadow_bottom">
+                            <div class="glyphicon glyphicon-send tag-blue" aria-hidden="true"></div>
+                            <h2>黑貓配送</h2>
+                            <hr class="yellow-divider">
+                            <p>
+                                我們相信自己的品質，那配送過程呢？顧客所擔心的也許不是這個，但是對我們來說堅持商品的品質，
+                                也要堅持最好的配送品質，我們拒絕不實的低溫配送，更拒絕不重視包裹的配送商。
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div style="height:300px;" class="insetshadow">
+
+        </div>
+        <script src="themes/dist/js/jquery.js"></script>
+        <script src="themes/dist/js/jquery-ui.min.js"></script>
+        <script src="themes/dist/js/bootstrap.min.js"></script>
+        <script src="themes/dist/js/jQuery.scrollSpeed.js"></script>
+        <script src="themes/dist/js/wow.js"></script>
+        <script src="themes/assets/js/BackToTop.js"></script>
+        <script src="themes/assets/js/NavigationBar.js"></script>
+        <script src="themes/assets/js/parallax.js"></script>
+
+
+
+        <script>
+            //全部頁面完成讀取後觸發
+            $(window).load(function() {
+
+                //平滑滾動
+                if (navigator.appVersion.indexOf("Win")!=-1) jQuery.scrollSpeed(75, 1000);
+
+                //                (function() {
+                //                    var quotes = [{
+                //                        text: "新鮮 只是我們最基本的承諾 ",
+                //                    }, {
+                //                        text: "一起品味最自然的鮮甜",
+                //                    }, {
+                //                        text: "從產地到餐桌 從新鮮到美味",
+                //                    }];
+                //                    var quote = quotes[Math.floor(Math.random() * quotes.length)];
+                //                    document.getElementById("SubTitleText").innerHTML =
+                //                        '<p>' + quote.text + '</p>';
+                //                })();
+
+                $('.CenterTitleText').delay(1000).animate({ opacity: 1, top: "39%" }, 1000);
+                $('.CenterSubText').delay(2000).animate({ opacity: 1, top: "40%" }, 1000);
+                $('.CenterDivider').delay(3000).animate({width:"400px"}, 1000);
+
+                new WOW().init();
+
+            });
+        </script>
+    </body>
+
+</html>
