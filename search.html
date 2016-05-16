@@ -24,31 +24,34 @@
     </head>
 
     <body>
-        <div class="navbar-wrapper large" id="navbar-base">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
-                <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-                    <!--[navbar][navbar-inverse][navbar-static-top]為Bootstrap的三種樣式-->
-                    <div class="container">
-                        <div class="navbar-header active">
-                            <!--增大文字 顯眼用[navbar-header][navbar-brand]互配使用-->
-                            <a class="navbar-brand" href="index.html">哈瑪嚐鮮</a>
-                        </div>
-                        <div class="navbar-collapse collapse">
-                            <!--[navbar-collapse][collapse]摺疊功能必須要用div包這兩特性內-->
-                            <ul class="nav navbar-nav ">
-                                <!--[nav]列表基本樣式[navbar-nav]改橫式-->
-                                <li><a href="index.html">回首頁</a></li>
-                                <!--[active]使選項保持被點亮的效果，有鏈結BS就會自動產生方格樣式-->
-                                <li><a href="aboutus.html">關於我們</a></li>
-                                <li><a href="mrgood.html">好好鮮生範例</a></li>
-                                <li><a href="contact.html">連絡我們</a></li>
-                                <li><a href="OurProduct.html">線上訂購</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll " href="../index.html">旅居漁村</a>
                 </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                        <li><a href="../index.html">回首頁</a></li>
+                        <!--[active]使選項保持被點亮的效果，有鏈結BS就會自動產生方格樣式-->
+                        <li><a href="../StayAbroad/productDetail/templete.html">商品公版</a></li>
+                        <li><a href="../search.html">好料上桌</a></li>
+                        <li><a href="../contact.html">連絡我們</a></li>
+                        <li><a href="../aboutus.html">關於我們</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-        </div>
+            <!-- /.container -->
+        </nav>
         <div class="onlyblank">
         </div>
         <div class="titlebanner text-center text-uppercase ">

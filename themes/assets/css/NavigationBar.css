@@ -1,59 +1,14 @@
-/*導覽控制項 固定置頂*/
-/*
-.navbar-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    margin-top: 0;
-}
-*/
-/*  導覽控制項的背景色與透明度  底線     */
-/*
-.navbar-inverse {
-	background: rgba(0, 0, 0, 0.7);
-    border-color: #FFFFFF;
-    height: 100%;
-}
-*/
 
-/*  導覽控制項的背景色與透明度  底線     */
-/*
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a:focus,
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #c83a3a;
-    
-}
-*/
+.collapse  .navbar-nav  a {
 
-/*
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
-    background-color: #e4dcd2;
+    font-size:1.5em;
 }
 
-.navbar-inverse .navbar-toggle {
-    border-color: #c83a3a;
+.navbar-header  .navbar-brand {
+
+    font-size:3em;
 }
-*/
-/*
-  導覽控制項的主標題文字 
-.navbar-inverse .navbar-header > a {
-    color: #FFFFFF;
-	font-family: Meiryo;
-	text-align: center;
-	width:250px;
-    font-weight: bold;
-    line-height: 40px;
-    font-size:40px;
-}
-*/
+
 /*  導覽控制項的主標題文字 */
 /*
 .large .navbar-inverse .navbar-header > a {
