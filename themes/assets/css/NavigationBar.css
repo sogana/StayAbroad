@@ -5,8 +5,13 @@
 }
 
 .navbar-header  .navbar-brand {
+    width: 200px;
+}
 
-    font-size:3em;
+.myBrand {
+    position: relative;
+    width: 100%;
+    top:-15px;
 }
 
 /*  導覽控制項的主標題文字 */

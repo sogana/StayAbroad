@@ -1,0 +1,13 @@
+
+html,body {
+    height: 100%; width: 100%; margin: 0;
+    color: #5a5a5a;
+    font-family: font-family:Hiragino Sans GB, Microsoft Yahei, tahoma, sans-serif;
+    background-color: #f8f8f8;
+}
+
+
+.mainpic {
+    background-image: url(../images/main_pic06.jpg);
+    background-size: cover;
+}
