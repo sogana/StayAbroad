@@ -1,4 +1,11 @@
 
+/*  CSS body html */
+html,body {
+    height: 100%; width: 100%; margin: 0;
+    font-family: font-family:Hiragino Sans GB, Microsoft Yahei, tahoma, sans-serif;
+    font-size-adjust: 0.5;
+}
+
 
 /*回到頂端*/
 
@@ -175,10 +182,87 @@
 .txt-green {
     color: #9bbb59;
 }
-/*------------------------------字體大小------------------------------*/
-.text-large {
-    font-size: 3.2em;
+/*----------------------------字體大小 H1 H2 H3 H4 縮排效果--------------------------------*/
+h1 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+    /* 45px / 36px */
 }
+h2 {
+    font-size: 1.625em;
+    /* 1.625x body copy size = 26px */
+    line-height: 1.15384615;
+    /* 30px / 26px */
+}
+h3 {
+    font-size: 1.375em;
+    /* 1.375x body copy size = 22px */
+    line-height: 1.13636364;
+    /* 25px / 22px */
+}
+h4 {
+    font-size: 1.125em;
+    /* 1.125x body copy size = 18px */
+    line-height: 1.11111111;
+}
+blockquote {
+    font-size: 1.25em;
+    /* 20px / 16px */
+    line-height: 1.25;
+    /* 25px / 20px */
+}
+@media (min-width: 43.75em) {
+    h1 {
+        font-size: 2.5em;
+        /* 2.5x body copy size = 40px */
+        line-height: 1.125;
+    }
+    h2 {
+        font-size: 2em;
+        /* 2x body copy size = 32px */
+        line-height: 1.25;
+    }
+    h3 {
+        font-size: 1.5em;
+        /* 1.5x body copy size = 24px */
+        line-height: 1.25;
+    }
+    h4 {
+        line-height: 1.22222222;
+        /* (22px / 18px */
+    }
+    blockquote {
+        font-size: 1.5em;
+        /* 24px / 16px = */
+        line-height: 1.45833333;
+        /* 35px / 24px */
+    }
+}
+
+@media (min-width: 56.25em) {
+    h1 {
+        font-size: 3em;
+        /* 3x body copy size = 48px */
+        line-height: 1.05;
+        /* keep to a multiple of the 20px line height 
+        and something more appropriate for display headings */
+    }
+    h2 {
+        font-size: 2.25em;
+        /* 2.25x body copy size = 36px */
+        line-height: 1.25;
+    }
+    h3 {
+        font-size: 1.75em;
+        /* 1.75x body copy size = 28px */
+        line-height: 1.25;
+    }
+}
+
+
+
+
 /*------------------------------背景顏色------------------------------*/
 
 .bg-white {
@@ -235,16 +319,16 @@
 
 /*------------------------------標題文字陰影------------------------------*/
 .title-black-word-shadow {
-  line-height: 80px;
-  color: #333333;
-  text-shadow: 0 13.36px 8.896px #888888,0 -2px 1px #fff;
-  letter-spacing: -2px;
+    line-height: 80px;
+    color: #333333;
+    text-shadow: 0 13.36px 8.896px #888888,0 -2px 1px #fff;
+    letter-spacing: -2px;
 }
 
 .title-white-word-shadow {
-   text-shadow: 0px 3px 0px #b2a98f,
-                 0px 14px 10px rgba(0,0,0,0.15),
-                 0px 29px 30px rgba(0,0,0,0.1);
+    text-shadow: 0px 3px 0px #b2a98f,
+        0px 14px 10px rgba(0,0,0,0.15),
+        0px 29px 30px rgba(0,0,0,0.1);
 }
 /*------------------------------按鈕形式------------------------------*/
 .btn-black {
