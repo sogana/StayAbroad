@@ -16,7 +16,6 @@ body {
     border-radius: 7px;
     background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
     color: #222;
-  
     font-size: 16px;
     text-shadow: 0 1px white;
     cursor: pointer;
@@ -114,26 +113,94 @@ body {
     color: #ed4136
 }
 
-.product-item .symbol {
-    position: absolute;
-    left: 10px;
-    top: 0px;
-    font-size: 42px;
-    font-weight: bold;
-    color: white;
+.product-pic {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+}
+.product-explain {
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 80px;
+}
+/*.product-item .symbol {
+position: absolute;
+left: 10px;
+top: 0px;
+font-size: 42px;
+font-weight: bold;
+color: white;
 }
 
 .product-item .number {
-    position: absolute;
-    right: 8px;
-    top: 5px;
+position: absolute;
+right: 8px;
+top: 5px;
 }
 
 .product-item .weight {
-    position: absolute;
-    left: 10px;
-    top: 76px;
-    font-size: 12px;
+position: absolute;
+left: 10px;
+top: 76px;
+font-size: 12px;
+}
+*/
+
+
+@media (max-width: 43.75em) {
+    .product-item {
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 280px;
+        margin: 8px;
+        background: #888;
+        color: #262524;
+    }
+
+    .product-item > * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-item .name {
+        position: absolute;
+        top:10px;
+        left: 9px;
+        font-weight: normal;
+        color: #ed4136
+    }
+
+    .product-item .spec {
+        position: absolute;
+        top:35px;
+        left: 9px;
+        font-weight: normal;
+        color: #333333
+    }
+
+    .product-item .price {
+        position: absolute;
+        top:55px;
+        left: 9px;
+        font-weight: normal;
+        color: #ed4136
+    }
+    .product-pic {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+    }
+    .product-explain {
+        position: relative;
+        background-color: white;
+        width: 200px;
+        height: 80px;
+    }
+    .button{
+        font-size: 10px;
+    }
 }
 
 .product-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
@@ -147,20 +214,11 @@ body {
 .product-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
 .product-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
 
-.product-pic {
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-}
 
 
 
-.product-explain {
-    position: relative;
-    background-color: white;
-    width: 300px;
-    height: 80px;
-}
+
+
 .shadow_left_bottom {
     -webkit-box-shadow: 6px 6px 16px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 6px 6px 16px -1px rgba(0,0,0,0.75);
@@ -192,78 +250,84 @@ body {
 
 .cargo-btn-style {
     position: absolute;
-    font-size: 0.5em;
+    font-size: 0.2em;
     bottom: 10%;
     right: 10px;
     width: 20%;
     height: 25%;
     padding: 1px;
 }
+@media (max-width: 43.75em) {
+    .cargo-btn-style {
+        font-size: 0.3em;
+    }
+
+}
 
 /* -- Ripple effect -------------------------------- */
 .ripple-effect {
-  position: relative;
-  overflow: hidden;
-  -webkit-transform: translate3d(0,0,0);
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0,0,0);
 }
 .ink {
-  display: block;
-  position: absolute;
-  pointer-events: none;
-  border-radius: 50%;
-  
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    border-radius: 50%;
 
-  background: #fff;
-  opacity: 1;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+
+    background: #fff;
+    opacity: 1;
 }
 
 
 
 .ink.animate {
-  -webkit-animation: ripple .5s linear;
-  -moz-animation: ripple .5s linear;
-  -ms-animation: ripple .5s linear;
-  -o-animation: ripple .5s linear;
-  animation: ripple .5s linear;
+    -webkit-animation: ripple .5s linear;
+    -moz-animation: ripple .5s linear;
+    -ms-animation: ripple .5s linear;
+    -o-animation: ripple .5s linear;
+    animation: ripple .5s linear;
 }
 @keyframes ripple {
-  100% {
-    opacity: 0;
-    transform: scale(2.5);
-  }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
 }
 @-webkit-keyframes ripple {
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(2.5);
-    transform: scale(2.5);
-  }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+        transform: scale(2.5);
+    }
 }
 @-moz-keyframes ripple {
-  100% {
-    opacity: 0;
-    -moz-transform: scale(2.5);
-    transform: scale(2.5);
-  }
+    100% {
+        opacity: 0;
+        -moz-transform: scale(2.5);
+        transform: scale(2.5);
+    }
 }
 @-ms-keyframes ripple {
-  100% {
-    opacity: 0;
-    -ms-transform: scale(2.5);
-    transform: scale(2.5);
-  }
+    100% {
+        opacity: 0;
+        -ms-transform: scale(2.5);
+        transform: scale(2.5);
+    }
 }
 @-o-keyframes ripple {
-  100% {
-    opacity: 0;
-    -o-transform: scale(2.5);
-    transform: scale(2.5);
-  }
+    100% {
+        opacity: 0;
+        -o-transform: scale(2.5);
+        transform: scale(2.5);
+    }
 }
 
 
@@ -359,7 +423,7 @@ body {
     width: 100%;
     color: white;
     padding: 30px;
-        
+
 }
 
 .insetshadow {
