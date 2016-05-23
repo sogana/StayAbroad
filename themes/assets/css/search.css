@@ -148,60 +148,7 @@ font-size: 12px;
 */
 
 
-@media (max-width: 43.75em) {
-    .product-item {
-        position: relative;
-        float: left;
-        width: 100px;
-        height: 180px;
-        margin: 8px;
-        background: #888;
-        color: #262524;
-    }
 
-    .product-item > * {
-        margin: 0;
-        padding: 0;
-    }
-
-    .product-item .name {
-        position: absolute;
-        top:10px;
-        left: 9px;
-        font-weight: normal;
-        color: #ed4136
-    }
-
-    .product-item .spec {
-        position: absolute;
-        top:35px;
-        left: 9px;
-        font-weight: normal;
-        color: #333333
-    }
-
-    .product-item .price {
-        position: absolute;
-        top:55px;
-        left: 9px;
-        font-weight: normal;
-        color: #ed4136
-    }
-    .product-pic {
-        width: 100px;
-        height: 100px;
-        background-size: cover;
-    }
-    .product-explain {
-        position: relative;
-        background-color: white;
-        width: 100px;
-        height: 80px;
-    }
-    .button{
-        font-size: 10px;
-    }
-}
 
 .product-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
 .product-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
@@ -213,11 +160,6 @@ font-size: 12px;
 .product-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
 .product-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
 .product-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
-
-
-
-
-
 
 .shadow_left_bottom {
     -webkit-box-shadow: 6px 6px 16px -1px rgba(0,0,0,0.75);
@@ -250,7 +192,7 @@ font-size: 12px;
 
 .cargo-btn-style {
     position: absolute;
-    font-size: 0.8em;
+    font-size: 1em;
     bottom: 10%;
     right: 10px;
     width: 20%;
@@ -258,11 +200,93 @@ font-size: 12px;
     padding: 1px;
 }
 @media (max-width: 43.75em) {
-    .cargo-btn-style {
-        font-size: 1em;
+    .product-item {
+        position: relative;
+        float: left;
+        width: 230px;
+        height: 150px;
+        margin: 8px;
+        background: #888;
+        color: #262524;
+    }
+    .product-pic {
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+
+    }
+    .product-explain {
+        position:absolute;
+        top: 0px;
+        right: 0px;
+        background-color: white;
+        width: 80px;
+        height: 150px;
+
     }
 
+    .product-item > * {
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    .product-item .name {
+        position: relative;
+        width: 80%;
+        font-weight: normal;
+        color: #ed4136;
+        font-size: 18px;
+        top: 0px;
+        right: 0px;
+        margin: 3px;
+    }
+    .product-item .spec {
+        position: relative;
+        display: block;
+        width: 80%;
+        font-weight: normal;
+        color: #333333;
+        top: 0px;
+        right: 0px;
+        font-size: 12px;
+    }
+
+    .product-item .price {
+        display: block;
+        position: relative;
+        font-weight: normal;
+        color: #ed4136;
+        top: 0px;
+        right: 0px;
+        font-size: 15px;
+    }
+    .dropdown-style {
+        position: relative;
+        display: block;
+        font-size: 0.5em;
+        padding: 0px;
+        top: 0px;
+        right: 0px;
+        width: 80%;
+        height: 22px;
+        margin: 3px;
+    }
+
+    .cargo-btn-style {
+        position: relative;
+        display: block;
+        font-size: 0.5em;
+        padding: 0px;
+        top: 0px;
+        right: 0px;
+        width: 80%;
+        height: 22px;
+        margin: 3px;
+    }
 }
+
 
 /* -- Ripple effect -------------------------------- */
 .ripple-effect {
